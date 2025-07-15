@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vender Moto</title>
+   <link rel="stylesheet" href="../css/styles.css" />
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="comprar.html">Comprar</a></li>
+          <li><a href="vender.html">Vender</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+          <li><a href="nosotros.html">Nosotros</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <h1>Publicá tu moto en venta</h1>
+
+      <form action="#" method="post">
+        <label for="marca">Marca:</label><br />
+        <input type="text" id="marca" name="marca" required /><br /><br />
+
+        <label for="modelo">Modelo:</label><br />
+        <input type="text" id="modelo" name="modelo" required /><br /><br />
+
+        <label for="anio">Año:</label><br />
+        <input
+          type="number"
+          id="anio"
+          name="anio"
+          min="1900"
+          max="2025"
+          required
+        /><br /><br />
+
+        <label for="precio">Precio (ARS):</label><br />
+        <input type="number" id="precio" name="precio" required /><br /><br />
+
+        <label for="descripcion">Descripción:</label><br />
+        <textarea
+          id="descripcion"
+          name="descripcion"
+          rows="4"
+          cols="40"
+          required
+        ></textarea
+        ><br /><br />
+
+        <label for="foto">Foto de la moto:</label><br />
+        <input type="file" id="foto" name="foto" accept="image/*" /><br /><br />
+
+        <button type="submit">Publicar</button>
+      </form>
+    </main>
+
+    <footer>
+      <p style="text-align: center">&copy; 2025 CompraVenta Motos</p>
+    </footer>
+  </body>
+</html>
