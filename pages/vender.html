@@ -4,14 +4,15 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vender Moto</title>
-   <link rel="stylesheet" href="../css/styles.css" />
+    <link rel="stylesheet" href="../css/styles.css" />
+  </head>
   <body>
     <header>
-      <nav>
+      <nav class="nav">
         <ul>
-          <li><a href="index.html">Inicio</a></li>
+          <li><a href="../index.html">Inicio</a></li>
           <li><a href="comprar.html">Comprar</a></li>
-          <li><a href="vender.html">Vender</a></li>
+          <li><a href="vender.html" class="activo">Vender</a></li>
           <li><a href="contacto.html">Contacto</a></li>
           <li><a href="nosotros.html">Nosotros</a></li>
         </ul>
@@ -19,16 +20,16 @@
     </header>
 
     <main>
-      <h1>Publicá tu moto en venta</h1>
+      <h1 style="text-align: center">Publicá tu moto en venta</h1>
 
-      <form action="#" method="post">
-        <label for="marca">Marca:</label><br />
-        <input type="text" id="marca" name="marca" required /><br /><br />
+      <form action="#" method="post" enctype="multipart/form-data">
+        <label for="marca">Marca:</label>
+        <input type="text" id="marca" name="marca" required />
 
-        <label for="modelo">Modelo:</label><br />
-        <input type="text" id="modelo" name="modelo" required /><br /><br />
+        <label for="modelo">Modelo:</label>
+        <input type="text" id="modelo" name="modelo" required />
 
-        <label for="anio">Año:</label><br />
+        <label for="anio">Año:</label>
         <input
           type="number"
           id="anio"
@@ -36,23 +37,21 @@
           min="1900"
           max="2025"
           required
-        /><br /><br />
+        />
 
-        <label for="precio">Precio (ARS):</label><br />
-        <input type="number" id="precio" name="precio" required /><br /><br />
+        <label for="precio">Precio (ARS):</label>
+        <input type="number" id="precio" name="precio" required />
 
-        <label for="descripcion">Descripción:</label><br />
+        <label for="descripcion">Descripción:</label>
         <textarea
           id="descripcion"
           name="descripcion"
           rows="4"
-          cols="40"
           required
-        ></textarea
-        ><br /><br />
+        ></textarea>
 
-        <label for="foto">Foto de la moto:</label><br />
-        <input type="file" id="foto" name="foto" accept="image/*" /><br /><br />
+        <label for="foto">Foto de la moto:</label>
+        <input type="file" id="foto" name="foto" accept="image/*" />
 
         <button type="submit">Publicar</button>
       </form>

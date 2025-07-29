@@ -1,31 +1,18 @@
+/* --- BASE --- */
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Segoe UI", Tahoma, sans-serif;
   background-color: #f5f5f5;
   margin: 0;
   padding: 0;
-}
-header {
-  background-color: #333;
-  padding: 10px 0;
-}
-nav ul {
-  list-style: none;
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-}
-nav a:hover {
-  color: #ccc;
-  text-decoration: underline;
-}
-main {
-  padding: 20px;
+  overflow-x: hidden; /* Previene scroll horizontal */
 }
 
 img {
   max-width: 100%;
   height: auto;
 }
+
+/* --- FORMULARIOS --- */
 form {
   max-width: 600px;
   margin: 0 auto;
@@ -44,49 +31,6 @@ form label {
 form input[type="text"],
 form input[type="number"],
 form input[type="file"],
-form textarea {
-  width: 100%;
-  padding: 10px;
-  margin-top: 5px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  box-sizing: border-box;
-}
-
-form textarea {
-  resize: vertical;
-}
-
-form button {
-  margin-top: 20px;
-  padding: 10px 20px;
-  background-color: #333;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-form button:hover {
-  background-color: #555;
-}
-form {
-  max-width: 600px;
-  margin: 0 auto;
-  background-color: #fff;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-form label {
-  display: block;
-  margin-top: 15px;
-  font-weight: bold;
-}
-
-form input[type="text"],
 form input[type="email"],
 form select,
 form textarea {
@@ -116,8 +60,10 @@ form button {
 form button:hover {
   background-color: #555;
 }
+
+/* --- LISTADO DE MOTOS --- */
 .moto-listado {
-  display: flex !important;
+  display: flex;
   flex-wrap: wrap;
   gap: 20px;
   justify-content: center;
@@ -137,7 +83,6 @@ form button:hover {
 
 .moto img {
   width: 100%;
-  height: auto;
   border-radius: 4px;
   margin-bottom: 10px;
 }
@@ -146,20 +91,17 @@ form button:hover {
   transform: scale(1.05);
 }
 
+/* --- INICIO (LANDING) --- */
 body.inicio {
-  margin: 0;
-  padding: 0;
-  font-family: "Segoe UI", Tahoma, sans-serif;
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url("../img/motos.jpg") no-repeat center center/cover;
-
   color: white;
   height: 100vh;
   display: flex;
   flex-direction: column;
 }
 
-/* NAV */
+/* --- NAV PERSONALIZADA (si no usás Bootstrap nav) --- */
 .nav {
   padding: 1rem 2rem;
   background-color: rgba(0, 0, 0, 0.6);
@@ -185,7 +127,7 @@ body.inicio {
   border-bottom: 2px solid white;
 }
 
-/* CONTENIDO */
+/* --- CONTENIDO LANDING --- */
 .contenedor-inicio {
   flex: 1;
   display: flex;
@@ -218,7 +160,8 @@ body.inicio {
 .btn-simple:hover {
   background-color: #ddd;
 }
-/* Estilos base ya puestos, ahora responsive */
+
+/* --- RESPONSIVE --- */
 @media (max-width: 768px) {
   .nav ul {
     flex-direction: column;

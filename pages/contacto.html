@@ -5,16 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contacto</title>
     <link rel="stylesheet" href="../css/styles.css" />
-    <!-- Cambiar si estás dentro de /pages -->
   </head>
   <body>
     <header>
-      <nav>
+      <nav class="nav">
         <ul>
           <li><a href="../index.html">Inicio</a></li>
           <li><a href="comprar.html">Comprar</a></li>
           <li><a href="vender.html">Vender</a></li>
-          <li><a href="contacto.html">Contacto</a></li>
+          <li><a href="contacto.html" class="activo">Contacto</a></li>
           <li><a href="nosotros.html">Nosotros</a></li>
         </ul>
       </nav>
@@ -24,29 +23,28 @@
       <h1>Contacto</h1>
 
       <form action="#" method="post">
-        <label for="nombre">Nombre:</label>
-        <input type="text" id="nombre" name="nombre" required />
+        <label for="nombre">Nombre:</label><br />
+        <input type="text" id="nombre" name="nombre" required /><br /><br />
 
-        <label for="email">Correo electrónico:</label>
-        <input type="email" id="email" name="email" required />
+        <label for="email">Email:</label><br />
+        <input type="email" id="email" name="email" required /><br /><br />
 
-        <label for="motivo">Motivo de contacto:</label>
-        <select id="motivo" name="motivo" required>
-          <option value="">Seleccionar...</option>
-          <option value="consulta">Consulta general</option>
-          <option value="compra">Estoy interesado en comprar</option>
-          <option value="venta">Quiero vender mi moto</option>
-        </select>
+        <label for="mensaje">Mensaje:</label><br />
+        <textarea
+          id="mensaje"
+          name="mensaje"
+          rows="5"
+          cols="40"
+          required
+        ></textarea
+        ><br /><br />
 
-        <label for="mensaje">Mensaje:</label>
-        <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
-
-        <button type="submit">Enviar mensaje</button>
+        <button type="submit">Enviar</button>
       </form>
     </main>
 
     <footer>
-      <p style="text-align: center">&copy; 2025 CompraVenta Motos</p>
+      <p>&copy; 2025 CompraVenta Motos</p>
     </footer>
   </body>
 </html>

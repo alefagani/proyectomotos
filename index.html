@@ -4,23 +4,70 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Inicio - Motos Sánchez</title>
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Tu CSS personalizado -->
     <link rel="stylesheet" href="css/styles.css" />
   </head>
-  <body class="inicio">
-    <nav class="nav">
-      <ul>
-        <li><a href="inicio.html" class="activo">Inicio</a></li>
-        <li><a href="pages/comprar.html">Comprar</a></li>
-        <li><a href="pages/vender.html">Vender</a></li>
-        <li><a href="pages/contacto.html">Contacto</a></li>
-        <li><a href="pages/nosotros.html">Nosotros</a></li>
-      </ul>
-    </nav>
 
-    <main class="contenedor-inicio">
-      <h1>MotoMarket</h1>
-      <p>Compra y venta de motos de forma simple y rápida</p>
-      <a href="pages/comprar.html" class="btn-simple">Explorar</a>
+  <body class="inicio">
+    <!-- HEADER CON NAV SEMÁNTICO Y BOOTSTRAP -->
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">MotoMarket</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a href="inicio.html" class="nav-link active">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a href="pages/comprar.html" class="nav-link">Comprar</a>
+              </li>
+              <li class="nav-item">
+                <a href="pages/vender.html" class="nav-link">Vender</a>
+              </li>
+              <li class="nav-item">
+                <a href="pages/contacto.html" class="nav-link">Contacto</a>
+              </li>
+              <li class="nav-item">
+                <a href="pages/nosotros.html" class="nav-link">Nosotros</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- MAIN CON CONTENIDO -->
+    <main class="container text-center py-5">
+      <h1 class="display-4">MotoMarket</h1>
+      <p class="lead">Compra y venta de motos de forma simple y rápida</p>
+      <a href="pages/comprar.html" class="btn btn-primary">Explorar</a>
     </main>
+
+    <!-- FOOTER SEMÁNTICO -->
+    <footer class="bg-dark text-light text-center py-3">
+      <div class="container">
+        <p class="mb-0">© 2025 Motos Sánchez - Todos los derechos reservados</p>
+      </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
