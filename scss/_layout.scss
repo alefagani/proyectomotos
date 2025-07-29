@@ -1,0 +1,23 @@
+.nav {
+  padding: 1rem 2rem;
+  background-color: rgba(0, 0, 0, 0.6);
+  ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin: 0;
+    padding: 0;
+    li a {
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+      &:hover {
+        border-bottom: 2px solid white;
+      }
+    }
+    .activo {
+      border-bottom: 2px solid white;
+    }
+  }
+}

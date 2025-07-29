@@ -1,0 +1,12 @@
+.btn-simple {
+  padding: 0.8rem 2rem;
+  background-color: white;
+  color: black;
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+  &:hover {
+    background-color: #ddd;
+  }
+}
