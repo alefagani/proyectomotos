@@ -1,51 +1,18 @@
-body {
-  font-family: "Segoe UI", Tahoma, sans-serif;
-  background-color: #f5f5f5;
-  margin: 0;
-  padding: 0;
-  overflow-x: hidden;
-}
+/* Error: Undefined variable.
+ *    ,
+ * 13 |   background-color: $color-fondo;
+ *    |                     ^^^^^^^^^^^^
+ *    '
+ *   scss\_base.scss 13:21  @import
+ *   scss\styles.scss 3:9   root stylesheet */
 
-img {
-  max-width: 100%;
-  height: auto;
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Undefined variable.\a    \2577 \a 13 \2502    background-color: $color-fondo;\a    \2502                      ^^^^^^^^^^^^\a    \2575 \a   scss\\_base.scss 13:21  @import\a   scss\\styles.scss 3:9   root stylesheet";
 }
-
-.nav {
-  padding: 1rem 2rem;
-  background-color: rgba(0, 0, 0, 0.6);
-}
-.nav ul {
-  list-style: none;
-  display: flex;
-  justify-content: center;
-  gap: 2rem;
-  margin: 0;
-  padding: 0;
-}
-.nav ul li a {
-  color: white;
-  text-decoration: none;
-  font-weight: 500;
-}
-.nav ul li a:hover {
-  border-bottom: 2px solid white;
-}
-.nav ul .activo {
-  border-bottom: 2px solid white;
-}
-
-.btn-simple {
-  padding: 0.8rem 2rem;
-  background-color: white;
-  color: black;
-  text-decoration: none;
-  border-radius: 4px;
-  font-weight: bold;
-  transition: background-color 0.3s ease;
-}
-.btn-simple:hover {
-  background-color: #ddd;
-}
-
-/*# sourceMappingURL=styles.css.map */

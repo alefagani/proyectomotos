@@ -1,11 +1,45 @@
-body {
-  font-family: $font-stack;
-  background-color: $secondary-color;
+// _base.scss
+
+// RESET BÁSICO
+* {
   margin: 0;
   padding: 0;
-  overflow-x: hidden;
+  box-sizing: border-box;
 }
-img {
-  max-width: 100%;
-  height: auto;
+
+// TIPOGRAFÍA GLOBAL
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: $color-fondo;
+  color: $color-texto;
+  line-height: 1.6;
+}
+
+// TITULOS
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: bold;
+  color: $color-principal;
+  margin-bottom: 1rem;
+}
+
+// ENLACES
+a {
+  color: $color-principal;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+// CONTENEDORES
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
 }

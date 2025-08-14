@@ -1,23 +1,68 @@
-.nav {
-  padding: 1rem 2rem;
-  background-color: rgba(0, 0, 0, 0.6);
-  ul {
-    list-style: none;
+/* =========================
+   Layout General
+   ========================= */
+
+header {
+  background-color: $color-primary;
+  color: $color-light;
+  padding: $spacing-medium 0;
+
+  nav {
     display: flex;
     justify-content: center;
-    gap: 2rem;
-    margin: 0;
-    padding: 0;
-    li a {
-      color: white;
+    gap: $spacing-large;
+
+    a {
+      color: $color-light;
+      font-weight: bold;
       text-decoration: none;
-      font-weight: 500;
+      @include transition();
+
       &:hover {
-        border-bottom: 2px solid white;
+        color: $color-secondary;
       }
     }
-    .activo {
-      border-bottom: 2px solid white;
+  }
+}
+
+main {
+  padding: $spacing-large 0;
+  background-color: $color-light;
+}
+
+footer {
+  background-color: $color-dark;
+  color: $color-light;
+  padding: $spacing-medium 0;
+  text-align: center;
+  font-size: 0.9rem;
+
+  a {
+    color: $color-secondary;
+    text-decoration: none;
+    @include transition();
+
+    &:hover {
+      text-decoration: underline;
     }
   }
+}
+
+/* Contenedor principal */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Sistema de columnas (grid) */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: $spacing-medium;
+}
+
+.col {
+  flex: 1;
+  min-width: 250px;
 }

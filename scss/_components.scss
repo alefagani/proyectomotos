@@ -1,12 +1,76 @@
-.btn-simple {
-  padding: 0.8rem 2rem;
-  background-color: white;
-  color: black;
-  text-decoration: none;
-  border-radius: 4px;
+/* =========================
+   Componentes
+   ========================= */
+
+/* Botones */
+.btn {
+  display: inline-block;
+  padding: $spacing-small $spacing-medium;
+  background-color: $color-primary;
+  color: $color-light;
+  border: none;
+  border-radius: $border-radius;
+  cursor: pointer;
   font-weight: bold;
-  transition: background-color 0.3s ease;
+  text-decoration: none;
+  @include transition();
+
   &:hover {
-    background-color: #ddd;
+    background-color: $color-secondary;
+  }
+}
+
+/* Tarjetas */
+.card {
+  background-color: $color-light;
+  border: 1px solid $color-gray-light;
+  border-radius: $border-radius;
+  overflow: hidden;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  @include transition();
+
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  .card-body {
+    padding: $spacing-medium;
+
+    h3 {
+      margin-bottom: $spacing-small;
+      color: $color-primary;
+    }
+
+    p {
+      font-size: 0.95rem;
+      color: $color-gray-dark;
+    }
+  }
+}
+
+/* Formularios */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: $spacing-small;
+
+  input,
+  textarea,
+  select {
+    padding: $spacing-small;
+    border: 1px solid $color-gray-light;
+    border-radius: $border-radius;
+    font-size: 1rem;
+  }
+
+  button {
+    @extend .btn;
   }
 }
